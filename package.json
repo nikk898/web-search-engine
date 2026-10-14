@@ -1,27 +1,33 @@
 {
-    "name": "crawling_spider",
-    "version": "0.0.1",
+    "name": "cc-search",
+    "version": "1.0.0",
     "private": true,
     "type": "module",
-    "description": "This is an example of a Crawlee project.",
+    "description": "Web search engine with crawling spider and search capabilities",
+    "main": "index.js",
     "dependencies": {
         "@crawlee/impit-client": "^3.0.0",
+        "better-sqlite3": "^13.0.3",
+        "cheerio": "^1.2.0",
         "crawlee": "^3.0.0",
-        "playwright": "1.63.0"
+        "playwright": "1.63.0",
+        "warcio": "^2.4.12"
     },
     "devDependencies": {
         "@apify/tsconfig": "^0.2.0",
+        "@types/better-sqlite3": "^9.6.0",
+        "@types/node": "^26.6.5",
         "tsx": "^4.23.15",
-        "typescript": "^7.0.2",
-        "@types/node": "^24.0.0"
+        "typescript": "^7.0.2"
     },
     "scripts": {
         "start": "npm run start:dev",
         "start:prod": "node dist/main.js",
         "start:dev": "tsx src/main.ts",
         "build": "tsc",
-        "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "keywords": [],
     "author": "It's not you it's me",
     "license": "ISC"
 }
